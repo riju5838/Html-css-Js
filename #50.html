@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("h1").hide(4000,function(){
+                  alert("heading disappear");  
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+   <button>click me</button> 
+   <h1>CALLBACK FUNCTION</h1>
+</body>
+</html>

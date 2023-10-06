@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+    <script>
+        $(document).ready(function(){
+            $("#b2").click(function(){
+                alert("text:"+ $("#b1").text());
+            });
+            $("#b3").click(function(){
+                alert("html:"+ $("#b1").html());
+            });
+            $("#b4").click(function(){
+                alert("val:"+ $("#b1").val());
+            });
+            
+        });
+    </script>
+</head>
+<body>
+    <p id="b1">This is line is part of a paragraph <b>and contains bold text.</b></p>
+ <button id="b2">Display text</button> 
+ <button id="b3">Display htmlcode</button>   
+ <button id="b4">Display val</button> 
+</body>
+</html>

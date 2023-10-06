@@ -1,0 +1,24 @@
+<!-- chaining -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(".h").css("color","blue").slideUp(2000).slideDown(2000);
+               
+            });
+        });
+    </script>
+    </head>
+    <body>
+        <button>Click Me</button>
+        <h1 class="h">Changing heading color</h1><br>
+        <h1 class="h">Changing heading color</h1>
+</body>
+</html>

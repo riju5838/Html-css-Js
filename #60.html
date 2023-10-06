@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#A").click(function(){
+              alert("Background color="+ $("#P").css("background-color"));
+            });
+            $("#V").click(function(){
+              $("#B").css("background-color","red")
+            });
+        })
+    </script>
+
+</head>
+<body>
+    <p style="background-color:rgb(0, 2, 2);" id="P" >The	is	the	first	heading!</p>
+    <p1 id="B">Lorem ipsum dolor sit amet consectetur adipisicing elit. A labore dignissimos illum numquam autem nobis hic consequuntur quia provident, reprehenderit nostrum ab vero quidem cumque, aut corrupti et dolore incidunt minus ullam alias obcaecati explicabo doloremque.</p1>
+
+    <button id="A">to know the color</button>
+    <button id="V">change the backgroundcolor</button>
+</body>
+</html>

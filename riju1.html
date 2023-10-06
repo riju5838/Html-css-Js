@@ -1,0 +1,70 @@
+<html>
+<head>
+<style>
+.button {
+color: rgb(255, 255, 255); font-size: 16px; line-height: 16px; padding: 6px; border-radius: 10px; font-family: Georgia, serif; font-weight: normal; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; border: 2px solid rgb(28, 110, 164); display: inline-block;}
+.myButton:hover {
+background: #1C6EA4; }
+.myButton:active {
+background: #144E75; }
+.button:hover{background-color:#3e8e4331}
+.button:active{
+</style>
+</head>
+<body>
+
+<h2>The button Element</h2>
+<button class="button" onclick="alert('Hello world!')">Click Me!</button><br>
+<label for="mycollege">About my college:</label>
+<textarea id="mycollege" name="mycollege">
+At my college you will learn how to make a website. They offer tutorials in all web development technologies.
+</textarea>
+<label for="mycollege">About my college:</label>
+<textarea id="mycollege" name="mycollege" rows="4"cols="50" paceholder="Write your review here" maxlength="50">
+</textarea>
+<label for="mycollege">About my college:</label>
+<textarea readonly>
+At my college you will learn how to make a website. They offer tutorials in all web development technologies.
+</textarea>
+<label for="mycollege">About my college:</label>
+<textarea required>
+At my college you will learn how to make a website. They offer tutorials in all web development technologies.
+</textarea>
+<label for="mycollege">About my college:</label>
+<textarea autofocus>
+At my college you will learn how to make a website. They offer tutorials in all web development technologies.
+</textarea>
+
+
+
+
+
+
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." maxlength="50">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." maxlength="50">
+    <label for="email">E-mail</label>
+    <input type="text" id="email" name="email" placeholder="E-mail.."  maxlength="50">
+
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"  maxlength="250"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outermost *{
+            display:block;
+            border:2px solid rgb(152, 180, 77);
+            margin:10px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("span").parents().css({"color":"grey","border":"5px solid red"})
+        })
+    </script>
+</head>
+<body>
+    <div class="outermost">body(great-great-grandparents)
+        <div style="border:2px solid blueviolet;width:400px;">div (great-grandparents)
+            <ul>ul (grandparent)
+                <li>li(direct-parent)
+                    <span>Saumojyoti</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

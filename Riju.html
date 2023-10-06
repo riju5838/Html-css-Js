@@ -1,0 +1,89 @@
+
+<html>
+<head>
+<title>Contact Us</title>
+ <style>
+      span {
+            color: red;
+        }
+
+        #full_name {
+            width: 500px;
+        }
+
+        #e_mail {
+            width: 500px;
+        }
+
+        .item1 {
+            width: 550px;
+            padding: 15px;
+            margin: auto;
+            background-color: red;
+        }
+
+        .item2 {
+            width: 550px;
+            padding: 15px;
+            margin: auto;
+            background-color: blue;
+        }
+
+        body {
+            background-color: yellow;
+        }
+        #submit{
+            color: white;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+<Marquee direction="left"><Font size="14",color="Green">
+Follow us on Twitter,Facebook</font></Marquee direction="right">
+
+    <div class="container">
+        <div class="item1">
+            <h1>
+                Contact Us
+            </h1>
+            <p>
+                Plese fill this form in a decent manner
+            </p>
+        </div>
+        <div class="item2">
+            <form action="backend.php" onsubmit="script">
+                <div>
+                    <label for="full_name"><b>Full Name <span>*</span></b></label>
+                </div>
+                <div>
+                    <input type="text" name="my_full_name" id="full_name" maxlength="50" width="500px" required>
+                </div>
+                <br>
+                <div>
+                    <label for="e_mail"><b>E-mail <span>*</span></b></label>
+                </div>
+                <div>
+                    <input type="email" name="my_e_mail" id="e_mail" maxlength="50" required>
+                </div>
+                <div>
+                    example@example.com
+                </div>
+                <br>
+                <div>
+                    <label for="message"><b>Message <span>*</span></b></label>
+                </div>
+                <div>
+                    <textarea name="my_message" id="message" cols="66" rows="10" maxlength="250" required></textarea>
+                </div>
+                <br>
+                <div>
+                    <center> <input type="submit" value="SUBMIT" id="submit"></center>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

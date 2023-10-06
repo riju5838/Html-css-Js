@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("div").find("span").css({"color":"blue","border":"3px solid red",})
+        })
+    </script>
+    <style>
+        .innermost *{
+            display:block;
+            border:1px solid green;
+            width:600px;
+            margin:18px;
+            padding:6px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="innermost">div (current element)
+        <p>p (child)
+            <span>span (grand child)</span>
+        </p>
+        <p>p (child)
+            <span>span (grand child)</span>
+        </p>
+ 
+
+    </div>
+    
+</body>
+</html>

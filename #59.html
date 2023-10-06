@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script>
+       $(document).ready(function(){
+        $("#B").click(function(){
+         $("h1,p").addClass("green");   
+        });
+        $("#A").click(function(){
+         $("h2,p").addClass("size");   
+        });
+        $("#C").click(function(){
+         $("#D").addClass("OK");   
+        });
+        $("#E").click(function(){
+         $("p").removeClass("size");   
+        });
+       }) 
+    </script>
+    <style>
+        .green{
+            color:greenyellow;
+        }
+        .size{
+            font-size:50px ;
+        }
+        .OK{
+            border:4px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>The	is	the	first	heading!</h1>
+    <h2>The	is	the	second	heading!</h2>
+    <p>The	is	the	first	heading!</p>
+    <p>The	is	the	second	heading!</p>
+    <img src="1.jpg" id="D"><br>
+
+    <button id="A">tab to change size</button>
+    <button id="B">tab to change color</button>
+    <button id="C">tab to change color</button>
+    <button id="E">tab to change color</button>
+</body>
+</html>

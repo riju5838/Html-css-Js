@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #A{
+            background-color: coral;
+        }
+        #B{
+            background-color: chartreuse;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+    </script>
+    <!-- <script>
+        $(document).ready(function(){
+            $("#A").click(function(){
+                $("p").show(1000);
+            })
+            $("#B").click(function(){
+                $("p").hide(1000);
+            })  
+            $("#A").dblclick(function(){
+                alert("doing wrong")
+            })
+        })
+    </script> -->
+    <script>
+         $(document).ready(function(){
+            $("#A").click(function(){
+                $("p").toggle(1000);
+            })
+        })
+    </script>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio fugit amet eos nesciunt dolorem vero cum sed nostrum reiciendis assumenda dolor id consectetur, veritatis modi culpa vitae sit ipsam at. Totam voluptates harum fugit.</p>
+<br><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit ab optio reprehenderit pariatur nihil voluptates consequatur ad a inventore officiis molestiae non maxime suscipit, repellat deleniti quam iste necessitatibus fugiat. Officia nam praesentium repellendus molestias?</p>
+<button id="A">Appear</button>
+
+</body>
+</html>

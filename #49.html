@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+    </script>
+    <script>
+        $(document).ready(function(){     
+            $(".A").click(function(){
+                $(".B").slideDown("slow");
+            });
+            $("stop").click(function(){
+                $("#1").stop();
+            })
+        })
+    </script>
+   <style>
+    .A{
+        background-color: darkslateblue;
+    }
+    .B{
+        background-color: coral;
+    }
+   </style>
+</head>
+<body>
+    <button>stop</button>
+    <div class="A">What is your name</div>
+    <div class="B">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor eligendi, maiores minima ut aspernatur, ipsum accusamus doloremque ex ad, delectus voluptas nemo id? Corrupti nemo pariatur facere. Voluptatibus voluptas hic corporis totam perspiciatis minus cum.</div>
+<div id="1">hellow!</div></body>
+</html>
